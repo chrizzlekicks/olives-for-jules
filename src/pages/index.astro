@@ -1,0 +1,14 @@
+---
+import Meta from '../layouts/Meta.astro';
+import Order from '../components/Order';
+import Heading from '../components/Heading.astro';
+---
+
+<Meta title="Olives for Jules">
+	<section class="grid place-items-center bg-[#FAD3FF]">
+		<section class="container">
+			<Heading />
+			<Order client:visible />
+		</section>
+	</section>
+</Meta>

@@ -2,13 +2,25 @@
 import Meta from '../layouts/Meta.astro';
 import Order from '../components/Order';
 import Heading from '../components/Heading.astro';
+import Intersection from '../components/Intersection.astro';
+import About from '../components/About.astro';
+import Team from '../components/Team';
 ---
 
 <Meta title="Olives for Jules">
-	<section class="grid place-items-center bg-[#FAD3FF]">
-		<section class="container">
+	<main class="grid place-items-center">
+		<section class="bg-[#fad3ff] w-full">
 			<Heading />
+		</section>
+		<section class="bg-[#fad3ff] w-full">
 			<Order client:visible />
 		</section>
-	</section>
+		<Intersection />
+		<section class="bg-[#fffdeb] w-full">
+			<About />
+		</section>
+		<section class="bg-[#fffdeb] w-full">
+			<Team />
+		</section>
+	</main>
 </Meta>

@@ -1,0 +1,25 @@
+---
+import shirt_front from '../assets/olivesforjules_shirt_front.svg';
+import shirt_back from '../assets/olivesforjules_shirt_back.svg';
+---
+
+<div class="w-full overflow-hidden bg-[#fffdeb]">
+	<div
+		class="relative flex flex-col items-center sm:h-[540px] md:h-[668px] lg:h-[924px]"
+	>
+		<div
+			class="w-screen bg-[#fad3ff] h-[496px] absolute rounded-b-[4999px] scale-x-150"
+		>
+		</div>
+		<img
+			src={shirt_front}
+			alt="shirt_front"
+			class="sm:absolute sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl top-20 sm:left-5 z-10"
+		/>
+		<img
+			src={shirt_back}
+			alt="shirt_back"
+			class="sm:absolute sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl sm:right-5 z-20"
+		/>
+	</div>
+</div>

@@ -1,0 +1,14 @@
+---
+import chris from '../assets/chris.jpeg';
+import franz from '../assets/franzmann.jpeg';
+import rio from '../assets/rio.jpeg';
+import Member from './Member.astro';
+---
+
+<div
+	class="my-4 p-4 lg:h-fit container flex flex-col items-center gap-8 sm:grid sm:grid-cols-3 sm:place-items-center mx-auto max-w-screen-lg"
+>
+	<Member name="Chris" src={chris} />
+	<Member name="Franz" src={franz} />
+	<Member name="Rio" src={rio} />
+</div>

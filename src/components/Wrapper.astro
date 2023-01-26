@@ -1,0 +1,11 @@
+---
+export interface Props {
+	color: string;
+}
+
+const { color } = Astro.props;
+---
+
+<section class:list={[`w-full bg-[${color}]`, { color: true }]}>
+	<slot />
+</section>

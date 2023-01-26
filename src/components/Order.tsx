@@ -19,7 +19,7 @@ const Order: React.FC = (): JSX.Element => {
 					<option>3</option>
 				</select>
 			</div>
-			<button className="block text-sm py-3 px-4 container rounded-full border border-solid border-[#7AAD7A] bg-[#7AAD7A] text-white">
+			<button className="block text-sm py-3 px-4 container rounded-full border border-solid border-tertiary bg-tertiary text-white">
 				Bestellen
 			</button>
 		</form>

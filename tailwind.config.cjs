@@ -8,6 +8,11 @@ module.exports = {
 			fontFamily: {
 				sans: ['Satoshi', 'sans-serif', ...defaultTheme.fontFamily.sans],
 			},
+			colors: {
+				primary: '#fad3ff',
+				secondary: '#fffdeb',
+				tertiary: '#7aad7a',
+			},
 		},
 	},
 	plugins: [],

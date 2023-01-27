@@ -23,26 +23,21 @@ const Intro: React.FC = (): JSX.Element => {
 				<ParallaxLayer offset={0} sticky={{ start: 0, end: 2 }} style={flex}>
 					<span className="w-80 sm:w-1/2 border-none rounded-full aspect-square bg-primary"></span>
 				</ParallaxLayer>
-				<ParallaxLayer
-					offset={1}
-					sticky={{ start: 1, end: 2 }}
-					speed={1.5}
-					style={flex}
-				>
+				<ParallaxLayer offset={1.5} sticky={{ start: 1, end: 2 }} style={flex}>
 					<img
 						className="w-80 sm:w-[47%] aspect-square"
 						src={logo}
 						alt="face"
 					/>
 				</ParallaxLayer>
-				<ParallaxLayer offset={2} factor={0.8} speed={1.5} style={flex}>
+				<ParallaxLayer offset={2} speed={3.5} style={flex}>
 					<div
 						ref={containerRef}
 						className="w-[2500px] h-[2500px] overflow-hidden absolute bg-transparent flex justify-center items-center"
 					>
 						<animated.span
 							style={{
-								clipPath: scrollYProgress.to((val) => `circle(${val * 150}%)`),
+								clipPath: scrollYProgress.to((val) => `circle(${val * 200}%)`),
 							}}
 							className="w-full border-none rounded-full aspect-square bg-primary"
 						></animated.span>

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { useScroll, animated } from '@react-spring/web';
 
-import logo from '../assets/olivesforjules_logonocircle.svg';
+import logo from '../assets/olivesforjules_logonotitle.svg';
 
 const Intro: React.FC = (): JSX.Element => {
 	const containerRef = React.useRef<HTMLDivElement>(null!);
@@ -21,7 +21,7 @@ const Intro: React.FC = (): JSX.Element => {
 		<div className="w-full h-screen inset-0 bg-secondary">
 			<Parallax pages={3}>
 				<ParallaxLayer offset={0} sticky={{ start: 0, end: 2 }} style={flex}>
-					<span className="w-72 sm:w-1/2 border-none rounded-full aspect-square bg-primary"></span>
+					<span className="w-80 sm:w-1/2 border-none rounded-full aspect-square bg-primary"></span>
 				</ParallaxLayer>
 				<ParallaxLayer
 					offset={1}
@@ -29,16 +29,20 @@ const Intro: React.FC = (): JSX.Element => {
 					speed={1.5}
 					style={flex}
 				>
-					<img className="sm:w-1/2 aspect-square" src={logo} alt="face" />
+					<img
+						className="w-80 sm:w-[47%] aspect-square"
+						src={logo}
+						alt="face"
+					/>
 				</ParallaxLayer>
-				<ParallaxLayer offset={2} style={flex}>
+				<ParallaxLayer offset={2} factor={0.8} speed={1.5} style={flex}>
 					<div
 						ref={containerRef}
 						className="w-[2500px] h-[2500px] overflow-hidden absolute bg-transparent flex justify-center items-center"
 					>
 						<animated.span
 							style={{
-								clipPath: scrollYProgress.to((val) => `circle(${val * 170}%)`),
+								clipPath: scrollYProgress.to((val) => `circle(${val * 150}%)`),
 							}}
 							className="w-full border-none rounded-full aspect-square bg-primary"
 						></animated.span>

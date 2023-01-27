@@ -3,7 +3,12 @@ import logo from '../assets/olivesforjules_brand.svg';
 ---
 
 <div class="my-4 p-4 flex flex-col justify-start gap-4 mx-auto max-w-screen-lg">
-	<img class="sm:max-w-md md:max-w-lg" src={logo} alt="logo" />
+	<img
+		id="brand"
+		class="sm:max-w-md md:max-w-lg -translate-x-full transition-all"
+		src={logo}
+		alt="logo"
+	/>
 	<p>
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi saepe
 		molestias, assumenda autem beatae, quas expedita vel, veritatis iste harum
@@ -18,3 +23,14 @@ import logo from '../assets/olivesforjules_brand.svg';
 		repudiandae incidunt sapiente!
 	</p>
 </div>
+<script>
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('translate-x-0', 'duration-1000');
+			}
+		});
+	});
+	const brandEl = document.getElementById('brand') as HTMLElement;
+	observer.observe(brandEl);
+</script>

@@ -6,10 +6,12 @@ import Intersection from '../components/Intersection.astro';
 import Wrapper from '../components/Wrapper.astro';
 import About from '../components/About.astro';
 import Team from '../components/Team.astro';
+import Intro from '../components/Intro';
 ---
 
 <Meta title="Olives for Jules">
 	<main class="grid place-items-center">
+		<Intro client:load />
 		<Wrapper color="primary">
 			<Heading />
 		</Wrapper>

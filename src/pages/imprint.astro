@@ -6,9 +6,11 @@ import Meta from '../layouts/Meta.astro';
 
 <Meta title="Olives for Jules">
 	<Wrapper color="secondary">
-		<main class="grid place-items-center p-4 max-w-screen-lg mx-auto">
+		<main class="grid place-items-center max-w-screen-lg mx-auto">
 			<div class="grid place-items-center m-4 py-8 w-16">
-				<Button>zurück</Button>
+				<a href="/">
+					<Button client:visible>zurück</Button>
+				</a>
 			</div>
 			<div class="grid place-items-start">
 				<h1 class="w-full text-2xl font-bold mb-8">Impressum</h1>

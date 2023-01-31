@@ -1,11 +1,32 @@
-<div class="my-4 p-4 flex flex-col justify-start gap-4 mx-auto max-w-screen-lg">
-	<h1 class="text-4xl font-bold mb-4">Worum geht's?</h1>
-	<p>
+---
+import Team from '../components/Team.astro';
+---
+
+<div class="my-4 flex flex-col justify-start gap-4 mx-auto max-w-screen-lg">
+	<h1
+		class="text-4xl font-bold mb-4 opacity-0 transition-all duration-1000 delay-300"
+	>
+		Worum geht's?
+	</h1>
+	<p class="opacity-0 transition-all delay-300">
 		Die Gesichter hinter dem kleinen Projekt – Rio, Chris und Franz. Mit
 		Leidenschaft und Liebe zum Detail wollen wir Freude in aller Leben bringen.
 		Lasst euch verzaubern, erlebt das Besondere und stoßt mit uns auf Jules an.
-		<br /><br />
+	</p>
+	<Team />
+	<p class="opacity-0 transition-all delay-200">
 		Disclaimer (vor allem für Jules): Diese Webseite ist nur ein Platzhalter. Du
 		kannst damit machen, was du möchtest. Es ist deine Domäne.
 	</p>
 </div>
+<script>
+	const obs1 = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('opacity-100');
+			}
+		});
+	});
+	const paragraphs = document.querySelectorAll('.transition-all');
+	paragraphs.forEach((p) => obs1.observe(p));
+</script>

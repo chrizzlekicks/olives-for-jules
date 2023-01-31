@@ -7,36 +7,36 @@ import rio from '../assets/rio.jpeg';
 <div
 	class="my-4 p-4 lg:h-fit container flex flex-col items-center gap-8 sm:grid sm:grid-cols-3 sm:place-items-center mx-auto max-w-screen-lg"
 >
-	<span
+	<div
 		class="w-full aspect-square m-4 relative flex justify-center border rounded-full overflow-hidden -translate-x-full transition-all blur-sm duration-300"
 	>
 		<span
-			class="w-full h-full opacity-0 hover:opacity-100 hover:bg-black/[0.6] grid place-items-center absolute z-10 transition-opacity"
+			class="w-full h-full grid place-items-center absolute z-10 opacity-0 transition-opacity hover:opacity-100 hover:bg-black/[0.6]"
 		>
 			<p class="text-white font-bold text-lg">Chris</p>
 		</span>
 		<img src={chris} class="absolute z-0" />
-	</span>
-	<span
+	</div>
+	<div
 		class="w-full aspect-square m-4 relative flex justify-center border rounded-full overflow-hidden -translate-x-full transition-all blur-sm duration-500"
 	>
 		<span
-			class="w-full h-full opacity-0 hover:opacity-100 hover:bg-black/[0.6] grid place-items-center absolute z-10 transition-opacity"
+			class="w-full h-full grid place-items-center absolute z-10 opacity-0 transition-opacity hover:opacity-100 hover:bg-black/[0.6]"
 		>
 			<p class="text-white font-bold text-lg">Franz</p>
 		</span>
 		<img src={franz} class="absolute z-0" />
-	</span>
-	<span
+	</div>
+	<div
 		class="w-full aspect-square m-4 relative flex justify-center border rounded-full overflow-hidden -translate-x-full transition-all blur-sm duration-700"
 	>
 		<span
-			class="w-full h-full opacity-0 hover:opacity-100 hover:bg-black/[0.6] grid place-items-center absolute z-10 transition-opacity"
+			class="w-full h-full grid place-items-center absolute z-10 opacity-0 transition-opacity hover:opacity-100 hover:bg-black/[0.6]"
 		>
 			<p class="text-white font-bold text-lg">Rio</p>
 		</span>
 		<img src={rio} class="absolute z-0" />
-	</span>
+	</div>
 </div>
 <script>
 	const observer = new IntersectionObserver((entries) => {

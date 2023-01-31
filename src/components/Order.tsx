@@ -1,3 +1,5 @@
+import Button from '../components/Button';
+
 const Order: React.FC = (): JSX.Element => {
 	return (
 		<form className="my-4 p-2 container grid grid-rows-3 place-items-center gap-3 mx-auto max-w-screen-lg">
@@ -19,9 +21,7 @@ const Order: React.FC = (): JSX.Element => {
 					<option>3</option>
 				</select>
 			</div>
-			<button className="block text-sm py-3 px-4 container rounded-full border border-solid border-tertiary bg-tertiary text-white">
-				Bestellen
-			</button>
+			<Button>Bestellen</Button>
 		</form>
 	);
 };

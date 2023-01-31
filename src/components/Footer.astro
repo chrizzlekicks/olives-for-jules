@@ -1,0 +1,42 @@
+---
+import { Icon } from 'astro-icon';
+---
+
+<footer class="relative h-auto p-4 flex justify-center items-center">
+	<article
+		class="w-full max-w-5xl flex flex-col sm:flex-row sm:justify-between"
+	>
+		<aside class="flex flex-col items-start">
+			<p class="py-2">© 2023 by oliveboysforjules. All rights reserved</p>
+			<div class="w-full flex flex-col justify-start py-2 sm:flex-row">
+				<a class="mr-4" href="/imprint/">Impressum</a>
+				<a class="mr-4" href="/">Datenschutz</a>
+			</div>
+		</aside>
+		<aside class="flex flex-col justify-center">
+			<div class="w-full flex flex-col justify-start py-2 sm:flex-row">
+				<a
+					class="w-full flex items-center p-2"
+					href="https://github.com/chrizzlekicks/olives-for-jules"
+				>
+					<Icon name="fa:github-square" />
+				</a>
+				<a
+					class="w-full flex items-center p-2"
+					href="https://www.instagram.com/olivesforjules/"
+				>
+					<Icon name="fa:instagram" />
+				</a>
+			</div>
+		</aside>
+	</article>
+</footer>
+<style lang="css">
+	[astro-icon] {
+		width: 2rem;
+		aspect-ratio: 1 / 1;
+	}
+	[astro-icon]:hover {
+		color: #fff;
+	}
+</style>

@@ -9,7 +9,7 @@ import logo from '../assets/olivesforjules_brand.svg';
 		src={logo}
 		alt="logo"
 	/>
-	<p id="paragraph" class="opacity-0 transition-all delay-200">
+	<p class="opacity-0 transition-all delay-200">
 		Ein kleines Projekt für eine ziemlich besondere Frau, die das Leben von
 		vielen Menschen bereichert und schöner macht. Entstanden ist die Idee an
 		einem schönen sonnigen Tag im Spätsommer 2022. Vier Freunde saßen in einem
@@ -18,11 +18,13 @@ import logo from '../assets/olivesforjules_brand.svg';
 		und hatte sich deshalb nur Oliven bestellt. Daraufhin fiel dann der Spruch:
 		Olives for Jules.
 		<br /><br />
+	</p>
+	<p class="opacity-0 transition-all delay-200">
 		Der Spruch ist uns, aber vor allem Jules, irgendwie im Gedächtnis geblieben.
-		Hat auch irgendwie etwas – zumindest unserer Meinung nach. Aus diesem Grund haben
-		wir ein nachhaltiges T-Shirt mit einem tollen Slogan entworfen. Mit olivesforjules
-		wollen wir Menschen zusammen bringen und zeigen, wie schön das Leben sein kann.
-		Vor allem, wenn der Vibe von Jules dabei ist.
+		Hat auch irgendwie etwas – zumindest unserer Meinung nach. Aus diesem Grund
+		haben wir ein nachhaltiges T-Shirt mit einem tollen Slogan entworfen. Mit
+		olivesforjules wollen wir Menschen zusammen bringen und zeigen, wie schön
+		das Leben sein kann. Vor allem, wenn der Vibe von Jules dabei ist.
 	</p>
 </div>
 <script>
@@ -41,7 +43,7 @@ import logo from '../assets/olivesforjules_brand.svg';
 		});
 	});
 	const brandEl = document.getElementById('brand') as HTMLElement;
-	const pEl = document.getElementById('paragraph') as HTMLElement;
+	const paragraphs = document.querySelectorAll('.transition-all');
 	obs1.observe(brandEl);
-	obs2.observe(pEl);
+	paragraphs.forEach((p) => obs2.observe(p));
 </script>

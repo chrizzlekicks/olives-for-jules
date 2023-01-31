@@ -4,7 +4,8 @@ import Team from '../components/Team.astro';
 
 <div class="my-4 flex flex-col justify-start gap-4 mx-auto max-w-screen-lg">
 	<h1
-		class="text-4xl font-bold mb-4 opacity-0 transition-all duration-1000 delay-300"
+		id="heading"
+		class="text-4xl font-bold mb-4 -translate-x-full transition-all"
 	>
 		Worum geht's?
 	</h1>
@@ -23,10 +24,19 @@ import Team from '../components/Team.astro';
 	const obs1 = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
+				entry.target.classList.add('translate-x-0', 'duration-1000');
+			}
+		});
+	});
+	const obs2 = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
 				entry.target.classList.add('opacity-100');
 			}
 		});
 	});
+	const h1 = document.getElementById('heading') as HTMLElement;
 	const paragraphs = document.querySelectorAll('.transition-all');
-	paragraphs.forEach((p) => obs1.observe(p));
+	obs1.observe(h1);
+	paragraphs.forEach((p) => obs2.observe(p));
 </script>

@@ -2,19 +2,23 @@
 import { Icon } from 'astro-icon';
 ---
 
-<footer class="relative h-auto flex justify-center items-center">
+<footer
+	class="relative h-auto sm:h-32 lg:h-40 flex justify-center items-center"
+>
 	<article
-		class="w-full max-w-5xl flex flex-col sm:flex-row sm:justify-between"
+		class="w-full max-w-5xl flex flex-col items-center sm:flex-row sm:justify-between"
 	>
 		<aside class="flex flex-col items-start">
-			<p class="py-2">© 2023 by oliveboysforjules. All rights reserved</p>
-			<div class="w-full flex flex-col justify-start py-2 sm:flex-row">
+			<p class="py-2 text-lg">
+				© 2023 by oliveboysforjules. All rights reserved
+			</p>
+			<div class="w-full flex flex-col justify-start py-2 text-lg sm:flex-row">
 				<a class="mr-4 hover:text-white" href="/imprint">Impressum</a>
 				<a class="mr-4 hover:text-white" href="/privacy">Datenschutz</a>
 			</div>
 		</aside>
 		<aside class="flex flex-col justify-center">
-			<div class="w-full flex flex-col justify-start py-2 sm:flex-row">
+			<div class="w-full flex justify-start py-2 text-lg">
 				<a
 					class="w-full flex items-center p-2"
 					href="https://github.com/chrizzlekicks/olives-for-jules"

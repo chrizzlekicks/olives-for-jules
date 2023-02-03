@@ -2,10 +2,10 @@
 import logo from '../assets/olivesforjules_brand.svg';
 ---
 
-<div class="my-4 flex flex-col justify-start gap-4 mx-auto max-w-screen-lg">
+<div class="mt-28 flex flex-col justify-start gap-4 mx-auto max-w-screen-lg">
 	<img
 		id="brand"
-		class="sm:max-w-md md:max-w-lg -translate-x-full transition-all"
+		class="sm:max-w-md md:max-w-lg self-center opacity-0 -translate-x-full transition-all"
 		src={logo}
 		alt="logo"
 	/>
@@ -32,7 +32,11 @@ import logo from '../assets/olivesforjules_brand.svg';
 	const obs1 = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
-				entry.target.classList.add('translate-x-0', 'duration-1000');
+				entry.target.classList.add(
+					'opacity-100',
+					'translate-x-0',
+					'duration-1000'
+				);
 			}
 		});
 	});

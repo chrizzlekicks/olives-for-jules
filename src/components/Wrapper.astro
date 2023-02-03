@@ -6,6 +6,6 @@ export interface Props {
 const { color } = Astro.props;
 ---
 
-<section class:list={[`w-full p-8 md:p-4 bg-${color}`, { color: true }]}>
+<section class:list={[`w-full p-4 bg-${color}`, { color: true }]}>
 	<slot />
 </section>

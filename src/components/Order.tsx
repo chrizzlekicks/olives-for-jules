@@ -32,7 +32,7 @@ const Order: React.FC = (): JSX.Element => {
 			onSubmit={sendEmail}
 		>
 			<input
-				className="block container rounded-full bg-primary border border-solid placeholder:text-ofj placeholder-shown:text-ofj border-gray-400 py-3 px-4"
+				className="block container rounded-full bg-primary border-2 border-solid placeholder:text-ofj_s placeholder-shown:text-ofj_s sm:placeholder:text-ofj_l sm:placeholder-shown:text-ofj_l focus:bg-primary focus:text-ofj_s sm:focus:text-ofj_l enabled:bg-primary enabled:text-ofj_s sm:enabled:text-ofj_l border-border py-3 px-4"
 				placeholder="Gib deine Email-Adresse an."
 				name="email"
 				type="email"
@@ -40,7 +40,7 @@ const Order: React.FC = (): JSX.Element => {
 			/>
 			<div className="grid grid-cols-3 gap-4 container">
 				<select
-					className="block container rounded-full bg-primary border border-solid border-gray-400 py-3 px-4 text-ofj"
+					className="block container rounded-full bg-primary border-2 border-solid border-border py-3 px-4 text-ofj_s sm:text-ofj_l"
 					name="size"
 				>
 					<option>XS</option>
@@ -50,14 +50,14 @@ const Order: React.FC = (): JSX.Element => {
 					<option>XL</option>
 				</select>
 				<select
-					className="block container rounded-full bg-primary border border-solid border-gray-400 py-3 px-4 text-ofj"
+					className="block container rounded-full bg-primary border-2 border-solid border-border py-3 px-4 text-ofj_s sm:text-ofj_l"
 					name="sex"
 				>
 					<option>Frau</option>
 					<option>Mann</option>
 				</select>
 				<select
-					className="block container rounded-full bg-primary border border-solid border-gray-400 py-3 px-4 text-ofj"
+					className="block container rounded-full bg-primary border-2 border-solid border-border py-3 px-4 text-ofj_s sm:text-ofj_l"
 					name="amount"
 				>
 					<option>1</option>

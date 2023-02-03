@@ -28,7 +28,7 @@ const Order: React.FC = (): JSX.Element => {
 	return (
 		<form
 			ref={formRef}
-			className="my-4 container grid grid-rows-3 place-items-center gap-6 mx-auto max-w-screen-lg"
+			className="my-8 container grid grid-rows-3 place-items-center gap-6 mx-auto max-w-screen-lg"
 			onSubmit={sendEmail}
 		>
 			<input

@@ -28,17 +28,19 @@ const Order: React.FC = (): JSX.Element => {
 	return (
 		<form
 			ref={formRef}
-			className="my-4 container grid grid-rows-3 place-items-center gap-3 mx-auto max-w-screen-lg"
+			className="my-4 container grid grid-rows-3 place-items-center gap-6 mx-auto max-w-screen-lg"
 			onSubmit={sendEmail}
 		>
 			<input
-				className="block container rounded-full border border-solid border-gray-400 py-3 px-4"
+				className="block container rounded-full bg-primary border border-solid placeholder:text-ofj placeholder-shown:text-ofj border-gray-400 py-3 px-4"
 				placeholder="Gib deine Email-Adresse an."
 				name="email"
+				type="email"
+				required
 			/>
-			<div className="grid grid-cols-3 gap-2 container">
+			<div className="grid grid-cols-3 gap-4 container">
 				<select
-					className="block container rounded-full bg-white border border-solid border-gray-400 py-3 px-4"
+					className="block container rounded-full bg-primary border border-solid border-gray-400 py-3 px-4 text-ofj"
 					name="size"
 				>
 					<option>XS</option>
@@ -48,14 +50,14 @@ const Order: React.FC = (): JSX.Element => {
 					<option>XL</option>
 				</select>
 				<select
-					className="block container rounded-full bg-white border border-solid border-gray-400 py-3 px-4"
+					className="block container rounded-full bg-primary border border-solid border-gray-400 py-3 px-4 text-ofj"
 					name="sex"
 				>
 					<option>Frau</option>
 					<option>Mann</option>
 				</select>
 				<select
-					className="block container rounded-full bg-white border border-solid border-gray-400 py-3 px-4"
+					className="block container rounded-full bg-primary border border-solid border-gray-400 py-3 px-4 text-ofj"
 					name="amount"
 				>
 					<option>1</option>

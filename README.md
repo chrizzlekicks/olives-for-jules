@@ -1,6 +1,6 @@
 # Olives for Jules
 
-Es handelt sich hierbei um ein kleines Geburtstagsprojekt für eine sehr gute Freundin. Verantwortlich für den Content ist Franz Breu ([franz.breu@hotmail.de]), für das Design Ricardo Hahn ([rioo@gmx.net]) und für den Code Chris Schimetschka ([chris.schimetschka@gmail.com]).
+Es handelt sich hierbei um ein kleines Geburtstagsprojekt für eine sehr gute Freundin. Verantwortlich für den Content ist Franz Breu (franz.breu@hotmail.de), für das Design Ricardo Hahn (rioo@gmx.net) und für den Code Chris Schimetschka (chris.schimetschka@gmail.com).
 
 Um lokal an dem Projekt mitzuwirken, klone das Git-Repo und lege es in irgendeinem deiner Ordner an. Installiere alle erforderlichen Pakete mit
 

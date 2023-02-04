@@ -38,7 +38,7 @@ const Intro: React.FC = (): JSX.Element => {
 				<ParallaxLayer offset={2} style={flex}>
 					<div
 						ref={containerRef}
-						className="w-[3000px] h-screen overflow-hidden absolute bg-transparent flex justify-center items-center"
+						className="w-[3000px] h-screen-ios h-screen overflow-hidden absolute bg-transparent flex justify-center items-center"
 					>
 						<animated.span
 							style={{

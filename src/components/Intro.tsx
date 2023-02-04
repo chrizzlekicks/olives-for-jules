@@ -30,7 +30,7 @@ const Intro: React.FC = (): JSX.Element => {
 					style={flex}
 				>
 					<img
-						className="w-80 sm:w-[47%] aspect-square transition-opacity hover:animate-pulse"
+						className="w-80 sm:w-[47%] aspect-square transition-opacity animate-pulse"
 						src={logo}
 						alt="face"
 					/>

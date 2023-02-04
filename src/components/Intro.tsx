@@ -18,7 +18,7 @@ const Intro: React.FC = (): JSX.Element => {
 		justifyContent: 'center',
 	};
 	return (
-		<div className="w-full h-screen inset-0 bg-secondary">
+		<div className="w-full h-screen-ios h-screen inset-0 bg-secondary">
 			<Parallax pages={3}>
 				<ParallaxLayer offset={0} sticky={{ start: 0, end: 2 }} style={flex}>
 					<span className="w-80 sm:w-1/2 border-none rounded-full aspect-square bg-primary transition-transform hover:animate-ping"></span>

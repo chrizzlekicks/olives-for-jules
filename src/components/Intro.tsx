@@ -38,11 +38,11 @@ const Intro: React.FC = (): JSX.Element => {
 				<ParallaxLayer offset={2} style={flex}>
 					<div
 						ref={containerRef}
-						className="w-[2500px] h-[2500px] overflow-hidden absolute bg-transparent flex justify-center items-center"
+						className="w-[3000px] h-screen overflow-hidden absolute bg-transparent flex justify-center items-center"
 					>
 						<animated.span
 							style={{
-								clipPath: scrollYProgress.to((val) => `circle(${val * 170}%)`),
+								clipPath: scrollYProgress.to((val) => `circle(${val * 200}%)`),
 							}}
 							className="w-full border-none rounded-full aspect-square bg-primary"
 						></animated.span>
